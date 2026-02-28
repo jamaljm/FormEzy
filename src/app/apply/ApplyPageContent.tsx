@@ -1376,7 +1376,7 @@ export default function ApplyPageContent() {
   if (isSubmitted) {
     return (
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-green-50 to-white">
-        {isSubmitted && <SubmissionPopup />}
+        {showSubmissionPopup && <SubmissionPopup />}
         <Navigation />
 
         <main className="flex-grow max-w-3xl mx-auto py-12 px-4 flex flex-col items-center justify-center">

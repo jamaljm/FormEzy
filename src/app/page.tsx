@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import App from "./App";
 
 export default function Page() {
   return (
-        <App />
+    <Suspense fallback={<div>Loading...</div>}>
+      <App />
+    </Suspense>
   );
 }
